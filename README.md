@@ -1,20 +1,15 @@
 <h1>Microsoft Windows Defender and Firewall</h1>
 
 <h2>Description</h2>
-In this project you will locate Microsoft Windows Security Virus and Threat Protection Settings, Run Microsoft Windows Defender Antivirus Quick Scan and Configure Microsoft Windows Firewall Rules 
-
-<br />
-
+In these projects you will locate Microsoft Windows Security Virus and Threat Protection Settings, Run Microsoft Windows Defender Antivirus Quick Scan and Configure Microsoft Windows Firewall Rules 
 
 <h2>Operating System Used<h2>
 
 - <b>MacOS Monterey Version 12.7.4</b>
 
-<h2>Downloads<h2>
- 
-- <b>[VirtualBox 7.0.14](https://www.virtualbox.org/wiki/Downloads)</b>
-- <b>[Kali Linux VM](https://www.kali.org/get-kali/#kali-platforms)</b>
-- <b>[Elastic account](https://cloud.elastic.co/registration)</b>
+<h2>Project # 1- Windows Defender Antivirus<h2>
+You’ll access and review Windows Security Virus & threat protection. Windows Defender Virus & threat protection is a built-in security feature that scans for threats on your system.
+
 
 <h2>Project walk-through:</h2>
 
