@@ -1,7 +1,7 @@
 <h1>Microsoft Windows Defender and Firewall</h1>
 
 <h2>Description</h2>
-Project consists of simple walk through steps on how to set up a home lab for Elastic Stack Security Information and Event Management (SIEM) using the Elastic Web portal and a Kali Linux VM. You will also learn how to generate security events on the Kali VM, set up an agent to forward data to the SIEM, and query and analyze the logs in the SIEM.
+In this project you will locate Microsoft Windows Security Virus and Threat Protection Settings, Run Microsoft Windows Defender Antivirus Quick Scan and Configure Microsoft Windows Firewall Rules 
 
 <br />
 
