@@ -13,8 +13,8 @@ You’ll access and review Windows Security Virus & threat protection. Windows D
 
 <h2>Project walk-through:</h2>
 
-<p align="center">
-Download VirtualBox: <br/>
+<p align="center"> 
+Click the Windows Start button and select Settings: <br/>
 <img src="https://i.imgur.com/TrQnZkK.png" height="80%" width="80%" />
 <br />
 <br />
