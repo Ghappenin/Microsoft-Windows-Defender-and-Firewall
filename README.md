@@ -7,7 +7,7 @@ In these projects you will locate Microsoft Windows Security Virus and Threat Pr
 
 - <b>MacOS Monterey Version 12.7.4</b>
 
-<h2>Project # 1- Windows Defender Antivirus<h2>
+<h2>Project # 1- Microsoft Windows Defender Antivirus<h2>
 You’ll access and review Windows Security Virus & threat protection. Windows Defender Virus & threat protection is a built-in security feature that scans for threats on your system.
 
 
@@ -15,39 +15,50 @@ You’ll access and review Windows Security Virus & threat protection. Windows D
 
 <p align="center"> 
 Click the Windows Start button and select Settings: <br/>
-<img src="https://i.imgur.com/TrQnZkK.png" height="80%" width="80%" />
+<img src="https://i.imgur.com/5Z8AWdx.png" height="80%" width="80%" />
 <br />
 <br />
-Download Kali Linux: <br/>
-<img src="https://i.imgur.com/M6gccC7.png" height="80%" width="80%" />
+On the Windows Settings page, select Privacy & Security -> Windows Security.: <br/>
+<img src="https://i.imgur.com/3uv5nIc.png" height="80%" width="80%" />
 <br />
 <br />
-Using '+' add Kali Linux download to VirtualBox: <br/>
-<img src="https://i.imgur.com/eoJHcJ9.png" height="80%" width="80%" />
+Select Virus and threat protection: <br/>
+<img src="https://i.imgur.com/y49EXfj.png" height="80%" width="80%" />
 <br />
 <br />
-With "Start" launch Kali Box:  <br/>
-<img src="https://i.imgur.com/E0s7KwZ.png" height="80%" width="80%" />
+On this screen, you’ll see the following features: <br/>
+Current threats: Here, you can see any threats that have been detected on your device. You can see when the last scan occurred, how long the scan took, and how many files were scanned. Here you can also click the button to start a quick scan or access scan options to run a full scan or a custom scan. Virus and threat protection settings: Here, you can access options for managing your virus and threat protection settings. You can customize your protection level, opt to send sample files to Microsoft, exclude files or folders from scans, or temporarily stop your protection.
+Virus and threat protection updates: Here, you can view the last time your virus definitions were updated. You can also opt to manually check for updates.
+Ransomware protection: Here, you can choose to enable controlled folder access. This protects memory, files, and folders from unauthorized changes.:  <br/>
+<img src="https://i.imgur.com/tKwa4lj.png" height="80%" width="80%" />
 <br />
 <br />
-Log into Elastic SIEM -> Navigate to 'Integrations' -> Download "Elastic Defend":  <br/>
-<img src="https://i.imgur.com/BXmTwTc.png)height=" height=80%" width="80%" />
+Under Virus & threat protection updates, select Protection updates:  <br/>
+<img src="https://i.imgur.com/mdzIUjT.png" height=80%" width="80%" />
 <br />
 <br />
-Paste command into Kali Terminal -> "ENTER" for install:  <br/>
-<img src="https://i.imgur.com/NyjiXmG.png" height="80%" width="80%" />
+You can view details for the most recent update to your threat definitions. Select Check for updates. This process could take a few minutes. When the update has completed, the Check for updates button will return, and you should notice that the last update time and date have changed. Select the back button to return to the Virus & threat protection screen.:  <br/>
+<img src="https://i.imgur.com/D3UAlEb.png" height="80%" width="80%" />
 <br />
 <br />
-Once message “Elastic Agent has been successfully installed.” It will automatically start collecting and forwarding logs to your Elastic SIEM  <br/>
-<img src="https://i.imgur.com/AW19rNt.png" height="80%" width="80%" />
+Now we can run an antivirus scan. Click the Quick scan button on the Virus & threat protection screen. The scan will take several minutes to run. When complete, the Quick scan button will reappear. <br/>
+<img src="https://i.imgur.com/2F2urC0.png" height="80%" width="80%" />
 <br />
 <br />
-Verify that the agent has been installed correctly by running this command: sudo systemctl status elastic-agent.service  <br/>
-<img src="https://i.imgur.com/BSbRH5o.png" height="80%" width="80%" />
+Click Protection history to view any recent findings.This page shows you the results of the last scan. You see the files identified as a threat and quarantined, so they cannot damage your device. You then see files identified as potential threats but allowed to continue running.
+  <br/>
+<img src="https://i.imgur.com/xQeT8Uo.png" height="80%" width="80%" />
 <br />
 <br />
-Create Security Events by using "Nmap" (“nmap -sS <ip address>”, “nmap -sT <ip address>”, “nmap -p- <ip address>”etc..) <br/>
-<img src="https://i.imgur.com/zCVJzfU.png" height="80%" width="80%" />
+
+<h2>Project # 2- Microsoft Windows Defender Firewall<h2>
+Windows Defender Firewall is a host-based software firewall that is included with the Windows operating system. In this lesson we will learn to configure firewall rules using Windows Defender Firewall and Windows Defender Firewall with Advanced Security.
+
+<h2>Project walk-through:</h2>
+
+<p align="center"> 
+Click the Windows Start button -> Privacy and Security -> Windows Security -> Firewall and Network Protection . <br/>
+<img src="https://i.imgur.com/BF9S2vr.png" height="80%" width="80%" />
 <br />
 <br />
 Navigate to "Logs" in Elastic to view logs fron Kali VM  <br/>
