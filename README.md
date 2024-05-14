@@ -115,24 +115,19 @@ Since we want to block connection with the public network, select Block the conn
 <img src="https://i.imgur.com/YaLzbD3.png" height="80%" width="80%" />" 
 <br />
 <br /> 
-Set an "ALERT" -> Click on the menu icon on the top-left, then under “Security,” click on “Alerts.” <br>
+Click the Advanced tab -> Click the Domain and Private boxes to remove the checkmarks. Click the Public to add the checkmark. Click Ok. <br>
 <img src="https://i.imgur.com/FC6LSnF.png" height="80%" width="80%" />" 
 <br />
 <br /> 
-Finally, click the “Create and enable rule” button to create the alert. Once you’ve created the alert, it will monitor your logs for Nmap scan events <br>
+The Overview panel will show your changes. Right-click each Key Management Service (TCP-In) rule and click Enable rule. <br>
 <img src="https://i.imgur.com/YaLzbD3.png" height="80%" width="80%" />" 
 <br />
 <br /> 
-Finally, click the “Create and enable rule” button to create the alert. Once you’ve created the alert, it will monitor your logs for Nmap scan events <br>
+Now you will see that a green checkmark appears next to the first rule indicating that the rule allowing communication is enabled. A circle with a line through it appears next to the second rule indicating that the rule blocking communication is enabled. <br>
 <img src="https://i.imgur.com/YaLzbD3.png" height="80%" width="80%" />" 
 <br />
 <br /> 
-Set an "ALERT" -> Click on the menu icon on the top-left, then under “Security,” click on “Alerts.” <br>
-<img src="https://i.imgur.com/FC6LSnF.png" height="80%" width="80%" />" 
-<br />
-<br /> 
-Finally, click the “Create and enable rule” button to create the alert. Once you’ve created the alert, it will monitor your logs for Nmap scan events <br>
-<img src="https://i.imgur.com/YaLzbD3.png" height="80%" width="80%" />
+
 
 
 
