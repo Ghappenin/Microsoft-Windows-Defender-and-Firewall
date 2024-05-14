@@ -61,39 +61,78 @@ Click the Windows Start button -> Privacy and Security -> Windows Security -> Fi
 <img src="https://i.imgur.com/BF9S2vr.png" height="80%" width="80%" />
 <br />
 <br />
-Navigate to "Logs" in Elastic to view logs fron Kali VM  <br/>
-<img src="https://i.imgur.com/aj1TnOD.png" height="80%" width="80%" />
+Click Domain network  <br/>
+<img src="https://i.imgur.com/utn6MKs.png" height="80%" width="80%" />
 <br />
 <br />
-Filter the results by using "Search"  <br/>
-<img src="https://i.imgur.com/byjLPJn.png" height="80%" width="80%" />
+Verify that the Windows Defender Firewall is toggled to On -> Select the back arrow button to return to the Firewall and network protection window.  <br/>
+<img src="https://i.imgur.com/b4n4bIJ.png" height="80%" width="80%" />
 <br />
 <br />
-Click on the menu icon on the top-left, then under “Analytics,” click on “Dashboards.” -> Create a Dashboard to Visualize the Events  <br/>
-<img src="https://i.imgur.com/BPXi94a.png" height="80%" width="80%" />
+Click Allow an app through firewall.  <br/>
+<img src="https://i.imgur.com/mi5AHuJ.png" height="80%" width="80%" />
 <br />
 <br />
-Click on the “Create Visualization” button to add a new visualization to the dashboard <br/>
-Select “Area” or “Line” as the visualization type. This will create a chart that shows the count of events over time. <br/>
-In the “Metrics” section, select “Count” as the vertical field type and “Timestamp” for the horizontal field. This will show the count of events over time. <br/>
+Scroll to google Chrome OR Mozilla Firefox. Observe in the screenshot below that the current configuration allows for Firefox to communicate on the Private network only but denies it from communicating on the Public network.
+ <br/>
+<img src="https://i.imgur.com/ZIvm4go.png" height="80%" width="80%" />
 <br />
 <br /> 
-Click on the “Save” button to save the visualization and then complete the rest of the settings. <br/>
-<img src="https://i.imgur.com/3CYbLef.png" height="80%" width="80%" />
+Select Advanced settings on the Firewall & network protection screen. <br/>
+<img src="https://i.imgur.com/EkbDH4X.png" height="80%" width="80%" />
+<br />
+<br /> 
+Make special note of the two rule types listed on the left panel -> Inbound rules: Inbound rules determine what traffic is allowed to the computer. -> Outbound rules: Outbound rules determine what traffic is allowed to leave the computer. Click Inbound Rules: <br>
+<img src="https://i.imgur.com/iPEBxfx.png" height="80%" width="80%" />" 
+<br />
+<br /> 
+Here you will see a long list of inbound rules. Note that some of the rules have a green checkmark next to them. This indicates that the rule is enabled to allow inbound communication. The rules without a checkmark are available for use but are not enabled. <br>
+<img src="https://i.imgur.com/E79wruu.png" height="80%" width="80%" />" 
+<br />
+<br /> 
+Scroll to the Key Management Service inbound rule in the Overview panel of Windows Defender Firewall with Advanced Security -> Double-click this rule.
+ <br>
+<img src="https://i.imgur.com/XYbsMxX.png" height="80%" width="80%" />" 
+<br />
+<br /> 
+Here you will see the details of this rule. You will note that the General tab includes the name of the rule, a description of the rule, and whether the rule has been allowed or blocked -> Click the Advanced tab <br>
+<img src="https://i.imgur.com/d0iVnbQ.png" height="80%" width="80%" />" 
+<br />
+<br /> 
+Here you will see which profiles the rule applies to. In this case, Domain, Private and Public are all selected.  <br>
+<img src="https://i.imgur.com/ABa4XO8.png" height="80%" width="80%" />" 
+<br />
+<br /> 
+Because we want to allow communication only with the domain and private networks, For Public this box should not have a checkmark. Next, click Apply, then click Ok. <br>
+<img src="https://i.imgur.com/dqQ5dhv.png" height="80%" width="80%" />" 
+<br />
+<br /> 
+Now we will create an inbound rule that blocks communication with the public network. Since the new rule will be similar to the last, we will copy the existing rule. Right-click the Key Management Service (TCP-In) inbound rule and click Copy. Press Ctrl+V to paste. <br>
+<img src="https://i.imgur.com/13Oxfxr.png" height="80%" width="80%" />" 
+<br />
+<br /> 
+Since we want to block connection with the public network, select Block the connection on the General tab. Click Apply.  <br>
+<img src="https://i.imgur.com/YaLzbD3.png" height="80%" width="80%" />" 
 <br />
 <br /> 
 Set an "ALERT" -> Click on the menu icon on the top-left, then under “Security,” click on “Alerts.” <br>
 <img src="https://i.imgur.com/FC6LSnF.png" height="80%" width="80%" />" 
 <br />
 <br /> 
-Click on the “Create new rule” button at the top right <br>
-Under the “Define rule” section, select the “Custom query” option from the dropdown menu <br>
-Under “Custom query,” set the conditions for the rule <br>
-Set the severity level for the alert. Keep all the other default settings under “Schedule rule” and click “Continue.” <br>
+Finally, click the “Create and enable rule” button to create the alert. Once you’ve created the alert, it will monitor your logs for Nmap scan events <br>
+<img src="https://i.imgur.com/YaLzbD3.png" height="80%" width="80%" />" 
 <br />
 <br /> 
 Finally, click the “Create and enable rule” button to create the alert. Once you’ve created the alert, it will monitor your logs for Nmap scan events <br>
 <img src="https://i.imgur.com/YaLzbD3.png" height="80%" width="80%" />" 
+<br />
+<br /> 
+Set an "ALERT" -> Click on the menu icon on the top-left, then under “Security,” click on “Alerts.” <br>
+<img src="https://i.imgur.com/FC6LSnF.png" height="80%" width="80%" />" 
+<br />
+<br /> 
+Finally, click the “Create and enable rule” button to create the alert. Once you’ve created the alert, it will monitor your logs for Nmap scan events <br>
+<img src="https://i.imgur.com/YaLzbD3.png" height="80%" width="80%" />
 
 
 
