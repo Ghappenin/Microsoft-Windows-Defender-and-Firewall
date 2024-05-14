@@ -112,7 +112,7 @@ Now we will create an inbound rule that blocks communication with the public net
 <br />
 <br /> 
 Since we want to block connection with the public network, select Block the connection on the General tab. Click Apply.  <br>
-<img src="https://i.imgur.com/YaLzbD3.png" height="80%" width="80%" />" 
+<img src="https://i.imgur.com/pGS8Cd3.png" height="80%" width="80%" />" 
 <br />
 <br /> 
 Click the Advanced tab -> Click the Domain and Private boxes to remove the checkmarks. Click the Public to add the checkmark. Click Ok. <br>
@@ -120,7 +120,7 @@ Click the Advanced tab -> Click the Domain and Private boxes to remove the check
 <br />
 <br /> 
 The Overview panel will show your changes. Right-click each Key Management Service (TCP-In) rule and click Enable rule. <br>
-<img src="https://i.imgur.com/YaLzbD3.png" height="80%" width="80%" />" 
+<img src="https://i.imgur.com/fIezHIg.png" height="80%" width="80%" />" 
 <br />
 <br /> 
 Now you will see that a green checkmark appears next to the first rule indicating that the rule allowing communication is enabled. A circle with a line through it appears next to the second rule indicating that the rule blocking communication is enabled. <br>
