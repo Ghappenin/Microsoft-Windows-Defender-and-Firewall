@@ -116,7 +116,7 @@ Since we want to block connection with the public network, select Block the conn
 <br />
 <br /> 
 Click the Advanced tab -> Click the Domain and Private boxes to remove the checkmarks. Click the Public to add the checkmark. Click Ok. <br>
-<img src="https://i.imgur.com/FC6LSnF.png" height="80%" width="80%" />" 
+<img src="https://i.imgur.com/KrQmDh9.png" height="80%" width="80%" />" 
 <br />
 <br /> 
 The Overview panel will show your changes. Right-click each Key Management Service (TCP-In) rule and click Enable rule. <br>
@@ -124,7 +124,7 @@ The Overview panel will show your changes. Right-click each Key Management Servi
 <br />
 <br /> 
 Now you will see that a green checkmark appears next to the first rule indicating that the rule allowing communication is enabled. A circle with a line through it appears next to the second rule indicating that the rule blocking communication is enabled. <br>
-<img src="https://i.imgur.com/YaLzbD3.png" height="80%" width="80%" />" 
+<img src="https://i.imgur.com/yyF2oDf.png" height="80%" width="80%" />" 
 <br />
 <br /> 
 
