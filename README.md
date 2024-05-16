@@ -5,7 +5,7 @@ In these projects you will locate Microsoft Windows Security Virus and Threat Pr
 
 <h2>Operating System Used<h2>
 
-- <b>MacOS Monterey Version 12.7.4</b>
+- <b>WIndows 11 Home 13th Gen Intel(R) Core(TM) i7-1360P   2.20 GHz</b>
 
 <h2>Project # 1- Microsoft Windows Defender Antivirus<h2>
 You’ll access and review Windows Security Virus & threat protection. Windows Defender Virus & threat protection is a built-in security feature that scans for threats on your system.
